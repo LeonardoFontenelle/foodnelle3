@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sobremesas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">Sobremesas</a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Pudim</a></li>
+                <li><a href="#">Bolo de Cenoura</a></li>
+                <li><a href="#">Sorvete</a></li>
+                <li><a href="#">Macaron</a></li>
+            </ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<img src="jasmine-huang-KJ3mqDeF9b4-unsplash.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<img src="amin-safaripour-4hlTJRtbX4k-unsplash.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<img src="raphael-lovaski-Nag3E3yzygU-unsplash.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<img src="divani-diva--R7vMzV078Q-unsplash.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="sci">
+				<li><a href="#" style="--i:9">Facebook</a></li>
+				<li><a href="#" style="--i:8">Twitter</a></li>
+				<li><a href="#" style="--i:7">Instagram</a></li>
+			</ul>
+			<p class="copyrightText">Foodnelle@gmail.com</p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
